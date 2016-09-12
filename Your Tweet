@@ -1,0 +1,15 @@
+<script>
+var Tweet = prompt("What's your tweet?");
+var length = Tweet.length;
+if (length <=140)
+{
+	console.log("Success");
+}
+else
+{
+	length = length-140
+	prompt("Tweet is "+ length +" Characters too long!");
+}
+
+
+</script>
