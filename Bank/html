@@ -1,0 +1,36 @@
+<script>
+
+var bankAmount = prompt("What is your bank value?");
+
+var userAnswer = prompt("Are you planning to deposit or withdraw today?");
+
+var finalBalance;
+
+if (userAnswer === "deposit") {
+	
+	var depositAmount = prompt("How much are you planning on depositing today?");
+deposit(depositAmount, bankAmount);
+}
+else {
+	
+	var withdrawlAmount = prompt("How much are you going to withdrawl today?");
+withDrawl(withdrawlAmount, bankAmount);
+}
+
+
+ function deposit(depositAmount, bankAmount) {
+	
+	var finalBalance = parseInt(depositAmount) + parseInt(bankAmount);
+	alert("Your balance is: " + finalBalance);
+
+};
+
+ function withDrawl(withdrawlAmount, bankAmount) {
+	
+	var finalBalance = bankAmount - withdrawlAmount;
+	alert("Your balance is: " + finalBalance);
+};
+
+
+
+</script>
