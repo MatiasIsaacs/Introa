@@ -1,0 +1,76 @@
+<html>
+<head></head>
+<body>
+<canvas id="myCanvas" width="800" height = "800"></canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var canvasWidth = 800;
+var canvasHight = 800;
+
+
+
+
+//First square
+ctx.fillStyle = "#E99925";
+ctx.fillRect(0,0,0.5*canvasWidth,0.5*canvasHight);
+
+
+ctx.fillStyle = "#E1C02A";
+ctx.fillRect(0,canvasHight*0.5,0.5*canvasWidth,0.5*canvasHight);
+
+ctx.fillStyle = "#DE7C1F";
+ctx.fillRect(0.5*canvasWidth,0,0.5*canvasWidth,0.5*canvasHight);
+
+ctx.fillStyle = "#DED131";
+ctx.fillRect(0.5*canvasWidth,0.5*canvasHight,0.5*canvasWidth,0.5*canvasHight);
+
+
+//Frist triangle 
+ctx.beginPath();
+ctx.moveTo(0,0.4*canvasHight);
+ctx.lineTo(0,0.5*canvasHight);
+ctx.lineTo(0.5*canvasWidth,0.5*canvasHight);
+ctx.fillStyle = "#000000";
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+
+//Second triangle
+ctx.beginPath();
+ctx.moveTo(1.0*canvasWidth,0.6*canvasHight);
+ctx.lineTo(1.0*canvasWidth,0.5*canvasHight);
+ctx.lineTo(0.5*canvasWidth,0.5*canvasHight);
+ctx.fillStyle = "#000000";
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+
+//third  Triangle
+ctx.beginPath();
+ctx.moveTo(0.5*canvasWidth,0.0*canvasHight);
+ctx.lineTo(0.5*canvasWidth,0.5*canvasHight);
+ctx.lineTo(0.6*canvasWidth,0.0*canvasHight);
+ctx.fillStyle = "#000000";
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+
+//Fourth triangle
+ctx.beginPath();
+ctx.moveTo(0.5*canvasWidth,1.0*canvasHight);
+ctx.lineTo(0.4*canvasWidth,1.0*canvasHight);
+ctx.lineTo(0.5*canvasWidth,0.5*canvasHight);
+ctx.fillStyle = "#000000";
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+
+
+
+
+
+
+</script>
+</body>
+</html>
