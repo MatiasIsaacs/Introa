@@ -1,0 +1,22 @@
+<html>
+<head>	
+</head>
+<body>
+<script type="text/javascript">
+//<![CDATA[
+var number = 0;
+var userAnswer = prompt("Enter a string.");
+	for (i=0; i<userAnswer.length;i++) {
+ if (userAnswer.charAt(i) === "c" || userAnswer.charAt(i) === "C") 
+	{
+		number += 1;
+		alert("The letter C appeared: " + number + " "+"times.");
+	} else 
+	console.log(userAnswer.charAt(i));
+	}
+	
+
+//]]>
+</script>
+</body>
+</html>
